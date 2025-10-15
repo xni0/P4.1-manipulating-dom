@@ -15,7 +15,7 @@
  */
 function renderAccordion(jsondata) {
     // 1. I need to get the main div from the HTML file.
-    const container = document.getElementById('accordion');
+    const container = document.getElementById('accordionExample');
 
     // Make sure the container exists before trying to use it.
     if (!container) {
@@ -49,7 +49,7 @@ for (let char of characters) {
                     ${char.name}
                 </button>
             </h2>
-            <div id="${collapseId}" class="accordion-collapse collapse" aria-labelledby="${headingId}" data-bs-parent="#character-accordion">
+            <div id="${collapseId}" class="accordion-collapse collapse" aria-labelledby="${headingId}" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                     <div class="row">
                         <div class="col-md-4">
